@@ -1,0 +1,11 @@
+<div align="center">
+  <mat-card>
+    {{usuario.nombre}}
+  </mat-card>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let rol of usuario.roles">
+      <a>{{ rol.nombre }}</a>
+    </mat-list-item>
+  </mat-nav-list>
+  <img [src]="imagenData" *ngIf="imagenEstado" width="200px"/>
+</div>
